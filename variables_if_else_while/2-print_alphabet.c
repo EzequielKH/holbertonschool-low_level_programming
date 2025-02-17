@@ -18,9 +18,8 @@ int main(void)
 		putchar(letter); /*Imprime la letra*/
 
 	}
-	
-	putchar('\n'); /*Imprime una nueva líne*/
+
+	putchar('\n'); /*Imprime una nueva líea*/
 
 	return (0);
-
 }
