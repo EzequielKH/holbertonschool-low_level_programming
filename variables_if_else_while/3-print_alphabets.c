@@ -9,16 +9,16 @@
 int main(void)
 
 {
-       	char letter;
+	char letter;
 
-	/* Imprime todas las letras en minúscula */
-    for ( letter = 'a'; letter <= 'z'; letter++) 
+	/*Imprime las letras una a una*/
+	for ( letter = 'a'; letter <= 'z'; letter++) 
     {
-        putchar(letter); 
+	    putchar(letter); 
     }
 
-   /* Imprime una nueva linea */
-    putchar('\n'); 
+	/*Imprime una nueva linea */
+	putchar('\n'); 
 
     return (0);
 }
