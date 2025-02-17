@@ -12,7 +12,7 @@ int main(void)
 	char letter;
 
 	/*Imprime las letras una a una*/
-	for ( letter = 'a'; letter <= 'z'; letter++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 
 	{
 
@@ -20,7 +20,13 @@ int main(void)
 
 	}
 
-	/*Imprime una nueva linea*/
+	for (letter = 'A'; letter <= 'Z'; letter++)
+	{
+
+		putchar(letter);
+
+	}
+
 	putchar('\n');
 
 	return (0);
