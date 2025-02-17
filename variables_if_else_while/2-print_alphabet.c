@@ -22,4 +22,5 @@ int main(void)
 	putchar('\n'); /*Imprime una nueva líne*/
 
 	return (0);
+
 }
