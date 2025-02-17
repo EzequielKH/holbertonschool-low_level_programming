@@ -12,10 +12,10 @@ int main(void)
     /* Usamos putchar para imprimir las letras una a una */
     for (letter = 'a'; letter <= 'z'; letter++)
     {
-        putchar(letter);  /* Imprime la letra */
+        putchar(letter); /* Imprime la letra */
     }
 
-    putchar('\n');  /* Imprime una nueva línea*/
+    putchar('\n'); /* Imprime una nueva línea */
 
     return (0);
 }
