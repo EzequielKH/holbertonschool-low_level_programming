@@ -3,6 +3,9 @@
 /*
  *main - Prints the size of various types on the computer
  *
+ *Description: This function prints the sizes of different types (char, int, long int, long long int, and float)
+ on the computer where the program is compiled and run.
+ * 
  * Return: Always 0 (Success)
  */
 int main(void)
