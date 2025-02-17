@@ -20,7 +20,7 @@ int main(void)
 
 	}
 
-	/*Imprime una nueva linea */
+	/*Imprime una nueva linea*/
 	putchar('\n');
 
 	return (0);
