@@ -1,0 +1,7 @@
+#include <stdio.h> /*libreria*/
+
+int main(void) /*aqui es el void*/
+{
+    puts("Programming is like building a multilingual puzzle"); /*lo que debe mostrar en la consola*/
+    return (0);  /*esto hara el return del print mostrandolo en la pantalla*/
+}
