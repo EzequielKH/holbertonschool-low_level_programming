@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  *main - Prints the size of various types on the computer
  *
  *Description: This function prints the sizes of different types
