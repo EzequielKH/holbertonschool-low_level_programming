@@ -7,7 +7,7 @@
  * 6 (del 0 al 9 y de la 'a' a la 'f') en minúsculas,
  * seguidos de una nueva línea.
  *
- * Retorna: Siempre 0.
+ * Return: Always 0 (success).
  */
 int main(void)
 {

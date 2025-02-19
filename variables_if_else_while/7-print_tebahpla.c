@@ -7,7 +7,7 @@
  * en minúsculas, desde la 'z' hasta la 'a',
  * seguido de una nueva línea
  *
- * Retorna: Siempre 0.
+ * Return: Always 0 (success).
  */
 int main(void)
 {
