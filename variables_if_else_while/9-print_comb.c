@@ -1,37 +1,29 @@
 #include <stdio.h>
 
 /**
- * main - Imprime todas las combinaciones
- * posibles de números de un solo dígito.
+ * main - Prints all possible combinations of single-digit numbers
+*
+ * Description: The program prints all single-digit numbers from 0 to 9,
+ * separated by commas and spaces. The last number does not have a comma.
  *
- * Descripción: El programa imprime los números del 0 al
- * separados por comas y
- * seguidos de un espacio,
- * en orden ascendente.
- * La última combinación no debe tener una coma.
- *
- * Return: Always 0 (success).
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int i;
+    int i;
 
-	for (i = 0; i <= 9; i++)
+    for (i = 0; i <= 9; i++)
+    {
+        putchar(i + '0');  /* Convert the integer to its ASCII representation */
 
-	{
-		putchar(i + '0');  /* Convierte el número a su carácter A*/
+        if (i != 9)  /* Prevent a comma and space after the last number */
+        {
+            putchar(',');  /* Print the comma */
+            putchar(' ');  /* Print the space */
+        }
+    }
 
-		if (i != 9)  /* Para no agregar coma después del últimnumeros */
+    putchar('\n');  /* Print a newline after the numbers */
 
-		{
-
-			putchar(',');  /* Imprime la coma */
-			putchar(' ');  /* Imprime el espacio */
-
-		}
-	}
-
-	putchar('\n');  /* Imprime una nueva línea después de todos los n�ros */
-
-	return (0);
+    return (0);
 }
