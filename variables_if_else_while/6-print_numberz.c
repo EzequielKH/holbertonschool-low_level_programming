@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- *main - entry main
+ * Main - entry main
  *
- *Description: the program prints all the digits form 0 to 9, followed by a new line. The numbers convers to their representation
- *ASCII before beeing printed.
+ * Description: the program prints all the digits form 0 to 9, followed by a new line. The numbers convers to their representation
+ * ASCII before beeing printed.
  *
- *return: always 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {

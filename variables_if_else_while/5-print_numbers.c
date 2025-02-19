@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- *main - entry access
+ * main - entry access
  *
- *Description: The program pints all the digits from 0 to 9, followed by a new line.
+ * Description: The program pints all the digits from 0 to 9, followed by a new line.
  *
- *return: always 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {

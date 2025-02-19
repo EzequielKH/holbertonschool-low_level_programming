@@ -1,10 +1,11 @@
 #include <stdio.h>
 /**
- *main - entry access
+ * main - entry access
  *
  * Description: The program pints all the letters of alphabet in lowercase 
  *except letters 'e' and 'q', followed by a new line.
- *return: Always 0 (success)
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
