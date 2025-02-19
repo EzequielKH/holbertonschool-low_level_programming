@@ -2,18 +2,22 @@
 /**
  *main - entry access
  *
+ *Description: The program pints all the digits from 0 to 9, followed by a new line.
+ *
  *return: always 0 (success)
  */
 int main(void)
 {
 	char c; /*variable*/
 
-	for (c = '0'; c <= '9'; c++) 
+	/*bucle para imprimir todos los digitos del 0 al 9*/
+	for (c = '0'; c <= '9'; c++)
 	{
-	putchar(c);
+
+		putchar(c); /*Imprine el digito*/
+
 	}
-	putchar('\n');
+	putchar('\n'); /*Imprime una nueva linea despues de los digitos*/
 
-	return 0;
+	return 0; /*retorna 0 para indicar que el programa termino correctamente*/
 }
-

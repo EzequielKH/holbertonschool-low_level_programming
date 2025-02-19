@@ -17,14 +17,17 @@ int main(void)
 
 	{
 
-	putchar(i + '0');  /* Convierte el número a su carácter A*/
+		putchar(i + '0');  /* Convierte el número a su carácter A*/
 
 	}
 
 	/* Imprimir las letras de 'a' a 'f' */
 	for (i = 10; i <= 15; i++)
+	
 	{
-	putchar(i - 10 + 'a');  /* Convierte el número a su carácter hexadecim*/
+
+		putchar(i - 10 + 'a');  /* Convierte el número a su carácter hexadecim*/
+
 	}
 
 	putchar('\n');  /* Imprimir una nueva líne*/

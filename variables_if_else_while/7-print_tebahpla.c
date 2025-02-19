@@ -14,9 +14,12 @@ int main(void)
 
 	/* Imprime las letras desde 'z' hasta 'a' */
 	for (i = 'z'; i >= 'a'; i--)
+
 	{
-	putchar(i);
+		putchar(i);
+
 	}
+
 	putchar('\n');  /* Imprime una nueva línea después de las letra*/ 
 
 	return (0);
