@@ -2,10 +2,10 @@
 
 /**
  * main - Imprime el abecedario en minúsculas en orden inverso
- * 
+ *
  * Descripción: El programa imprime todas las letras del abecedario
  * en minúsculas, desde la 'z' hasta la 'a', seguido de una nueva línea
- * 
+ *
  * Retorna: Siempre 0.
  */
 int main(void)
@@ -20,7 +20,7 @@ int main(void)
 
 	}
 
-	putchar('\n');  /* Imprime una nueva línea después de las letra*/ 
+	putchar('\n');  /* Imprime una nueva línea después de las letra*/
 
 	return (0);
 }

@@ -16,7 +16,7 @@ int main(void)
 	{
 
 	putchar(i + '0');  /* Convert the integer to its ASCII character representation*/
-	
+
 	}
 
 	putchar('\n');  /* Print a newline character*/

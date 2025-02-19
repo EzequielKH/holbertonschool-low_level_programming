@@ -2,14 +2,14 @@
 /**
  * main - entry access
  *
- * Description: The program pints all the letters of alphabet in lowercase 
+ * Description: The program pints all the letters of alphabet in lowercase
  *except letters 'e' and 'q', followed by a new line.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char c; 
+	char c;
 /*variable*/
 
 	for (c = 'a'; c <= 'z'; c++)
@@ -24,5 +24,6 @@ int main(void)
 
 	putchar('\n');
 
-	return 0;
+	return (0);
+
 }

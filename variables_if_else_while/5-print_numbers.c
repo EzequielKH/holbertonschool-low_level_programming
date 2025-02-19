@@ -19,5 +19,5 @@ int main(void)
 	}
 	putchar('\n'); /*Imprime una nueva linea despues de los digitos*/
 
-	return 0; /*retorna 0 para indicar que el programa termino correctamente*/
+	return (0); /*retorna 0 para indicar que el programa termino correctamente*/
 }
