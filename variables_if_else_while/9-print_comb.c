@@ -3,8 +3,11 @@
 /**
  * main - Imprime todas las combinaciones posibles de números de un solo dígito.
  *
- * Descripción: El programa imprime los números del 0 al 9, separados por comas y
- * seguidos de un espacio, en orden ascendente. La última combinación no debe tener una coma.
+ * Descripción: El programa imprime los números del 0 al 9
+ * , separados por comas y
+ * seguidos de un espacio,
+ * en orden ascendente.
+ * La última combinación no debe tener una coma.
  *
  * Retorna: Siempre 0 (success).
  */

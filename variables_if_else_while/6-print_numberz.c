@@ -2,7 +2,9 @@
 /**
  * Main - entry main
  *
- * Description: the program prints all the digits form 0 to 9, followed by a new line. The numbers convers to their representation
+ * Description: the program prints all the digits form 0 to 9,
+ * followed by a new line.
+ * The numbers convers to their representation
  * ASCII before beeing printed.
  *
  * Return: Always 0 (Success)

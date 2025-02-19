@@ -3,8 +3,9 @@
 /**
  * main - Imprime los números de base 16 en minúsculas.
  *
- * Descripción: El programa imprime los números de base 16 (del 0 al 9
- * y de la 'a' a la 'f') en minúsculas, seguidos de una nueva línea.
+ * Descripción: El programa imprime los números de base 1
+ * 6 (del 0 al 9 y de la 'a' a la 'f') en minúsculas,
+ * seguidos de una nueva línea.
  *
  * Retorna: Siempre 0.
  */
