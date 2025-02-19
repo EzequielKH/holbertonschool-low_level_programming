@@ -3,8 +3,7 @@
  * Main - entry main
  *
  * Description: the program prints all the digits form 0 to 9,
- * followed by a new line.
- * The numbers convers to their representation
+ * followed by a new line. The numbers convers to their representation
  * ASCII before beeing printed.
  *
  * Return: Always 0 (Success)
@@ -17,7 +16,7 @@ int main(void)
 
 	{
 
-	putchar(i + '0');  /* Convert the integer to its ASCII character representation*/
+	putchar(i + '0');
 
 	}
 
