@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet - Imprime el alfabeto en minúsculas
+ * main - Imprime el alfabeto en minúsculas
  *
  * Description: Esta función recorre las etras del alfabet
  * desde 'a' hasta 'z'
@@ -12,7 +12,7 @@
  * Return: Nada. La función es de tipo void, no devuelve ningún valor
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char i;
 
