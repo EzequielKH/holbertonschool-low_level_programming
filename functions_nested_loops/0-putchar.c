@@ -1,10 +1,15 @@
 #include "_putchar.h"
 
 /**
+ * main - Punto de entrada del programa
  *
- * main - punto de entrada del programa
+ * Description: Esta función imprime el texto "_putchar"
+ * seguido de un salto de líne,
+ * utilizando la función `_putchar`
+ * para imprimir cada carácter individualmente.
  *
- *Return: always 0 (success)
+ * Return: Siempre devuelve 0 para indicar
+ * que el programa se ejecutó correctamente.
  */
 
 int main(void)

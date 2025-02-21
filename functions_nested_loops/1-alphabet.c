@@ -1,12 +1,18 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
+ * print_alphabet - Imprime el alfabeto en minúsculas
  *
- *main - prints the alphabet in lowercase
+ * Description: Esta función recorre las etras del alfabet
+ * desde 'a' hasta 'z'
+ * e imprime cada letra utilizando la función `_putchar`
+ * . Al final, imprime un salto
+ * de línea para que el resultado se muestre n una nueva línea
  *
- *return: null
+ * Return: Nada. La función es de tipo void, no devuelve ningún valor
  */
-void print_alphabet(void)
+
+int main(void)
 {
 	char i;
 
