@@ -10,10 +10,10 @@ int _abs(int n)
 {
 	if (n < 0)
 	{
-		return (-n);  /* If the number is negative, return its negation (i.e., positive value)*/
+		return (-n);
 	}
 	else
 	{
-		return (n);   /* If the number is already positive or zero, return it as is*/
+		return (n);
 	}
 }

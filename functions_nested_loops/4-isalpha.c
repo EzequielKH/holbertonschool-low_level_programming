@@ -8,7 +8,7 @@
  */
 int _isalpha(int i)
 {
-	/*Check if the character is either uppercase or lowercase */
+	/*Check if the character is either uppercase or lowercase*/
 	if ((i >= 'a' && i <= 'z') || (i >= 'A' && i <= 'Z'))
 	{
 		return (1);
