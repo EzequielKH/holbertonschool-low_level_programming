@@ -22,7 +22,7 @@ void print_alphabet_x10(void)
 		/* Bucle para imprimir las letras de la 'a' a la 'z' */
 		for (c = 'a'; c <= 'z'; c++)
 		{
-			_putchar(c);  /* Imprime cada letra */
+			_putchar(c);/* Imprime cada letra */
 		}
 		_putchar('\n');
 	}
