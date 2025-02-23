@@ -9,12 +9,12 @@
  */
 int _islower(int i)
 {
-	if (i >= 'a' && i <= 'z')  /*Verifica si 'i' está en el rano*/
+	if (i >= 'a' && i <= 'z')
 	{
-	return (1);  /*Retorna 1 si es minúscula*/
+		return (1);  /*Retorna 1 si es minúscula*/
 	}
 	else
 	{
-	return (0);  /*Retorna 0 si no es minúscul*/
+		return (0);  /*Retorna 0 si no es minúscul*/
 	}
 }

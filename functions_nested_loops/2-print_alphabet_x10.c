@@ -16,14 +16,14 @@ void print_alphabet_x10(void)
 	int i;
 	char c;
 
-    /* Bucle para imprimir el alfabeto 10 veces */
+	/* Bucle para imprimir el alfabeto 10 veces */
 	for (i = 0; i < 10; i++)
 	{
-        /* Bucle para imprimir las letras de la 'a' a la 'z' */
-	for (c = 'a'; c <= 'z'; c++)
-	{
-		_putchar(c);  /* Imprime cada letra */
-	}
-	_putchar('\n');
+		/* Bucle para imprimir las letras de la 'a' a la 'z' */
+		for (c = 'a'; c <= 'z'; c++)
+		{
+			_putchar(c);  /* Imprime cada letra */
+		}
+		_putchar('\n');
 	}
 }
