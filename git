@@ -1,0 +1,5 @@
+#!/bin/bash
+git add .
+git commit -m 'nuevo agregado u/o arreglado'
+git push
+
