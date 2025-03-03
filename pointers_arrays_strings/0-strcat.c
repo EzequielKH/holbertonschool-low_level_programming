@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strcat - Concatenates two strings.
  * @dest: The destination string.
@@ -25,5 +26,5 @@ char *_strcat(char *dest, char *src)
 	/* Agrega el null terminator */
 	dest[i] = '\0';
 
-	return dest;
+	return (dest);
 }

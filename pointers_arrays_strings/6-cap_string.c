@@ -14,15 +14,25 @@ char *cap_string(char *str)
 
 	while (str[i])
 	{
-		if (in_word == 0 && (str[i] >= 'a' && str[i] <= 'z'))
+		int j = 0;
+		int is_separator = 0;
+
+		while (separators[j])
+		{
+			if (str[i] == separators [j])
+			{
+				is_separator = 1;
+				break;
+			}
+			j++;
+		}
+
+		if (in_word == 0 && (str[i] >= 'a' && str[i] <= 'z' ))
 		{
 			str[i] -= 32;
 			in_word = 1;
 		}
-		else if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == ',' ||
-			str[i] == ';' || str[i] == '.' || str[i] == '!' || str[i] == '?' ||
-			str[i] == '\"' || str[i] == '(' || str[i] == ')' || str[i] == '{' ||
-			str[i] == '}')
+		else if (is_separator)
 		{
 			in_word = 0;
 		}
@@ -32,6 +42,5 @@ char *cap_string(char *str)
 		}
 		i++;
 	}
-
 	return str;
 }

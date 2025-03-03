@@ -27,5 +27,5 @@ char *_strncat(char *dest, char *src, int n)
 	/*Asegurar el null terminator si n es menor que la longitud de src*/
 	dest[i] = '\0';
 
-	return dest;
+	return (dest);
 }
