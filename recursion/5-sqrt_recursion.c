@@ -11,7 +11,7 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0) /* Square root is not defined for negative numbers */
 		return (-1);
-	return (_sqrt_helper(n, 1));
+	return (_sqrt_helper(n, 0));
 }
 
 /**
@@ -24,8 +24,8 @@ int _sqrt_recursion(int n)
 int _sqrt_helper(int n, int guess)
 {
 	if (guess * guess == n) /* Base case: found the square root */
-		return (-1);
-	if (guess * guess > n)
 		return (guess);
+	if (guess * guess > n)
+		return (-1);
 	return (_sqrt_helper(n, guess + 1));
 }
