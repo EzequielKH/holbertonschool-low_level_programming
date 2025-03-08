@@ -20,13 +20,13 @@ int main(int argc, char *argv[])
 
 	/*Multiply the two numbers*/
 
-	num1= atoi(argv[1]);
-	num2= atoi(argv[2]);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
 
 	result = num1 * num2;
 
 	/* Print the result */
 	printf("%d\n", result);
-
 	return (0);
+
 }
