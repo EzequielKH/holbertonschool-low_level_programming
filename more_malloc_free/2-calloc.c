@@ -18,11 +18,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
     ptr = malloc(nmemb * size);
     if (ptr == NULL)
-        return NULL; // If malloc fails, return NULL
+        return NULL;
 
     memset(ptr, 0, nmemb * size);
 
-    return ptr; // Return the pointer to the allocated memory
+    return ptr;
 }
 
 /**
@@ -79,4 +79,3 @@ int main(void)
 
     return (0);
 }
-
