@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <string.h>  // For memset
+#include <string.h>
 
 /**
  * _calloc - allocates memory for an array and initializes it to zero
