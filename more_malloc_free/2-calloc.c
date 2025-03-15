@@ -13,39 +13,40 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
     void *ptr;
 
-    // Verificar si nmemb o size son 0
     if (nmemb == 0 || size == 0)
         return NULL;
 
-    // Asignar memoria utilizando malloc
     ptr = malloc(nmemb * size);
     if (ptr == NULL)
-        return NULL; // Si malloc falla, devolver NULL
+        return NULL; // If malloc fails, return NULL
 
-    // Inicializar la memoria a 0 utilizando memset
     memset(ptr, 0, nmemb * size);
 
-    return ptr;
+    return ptr; // Return the pointer to the allocated memory
 }
 
 /**
- * simple_print_buffer - prints buffer in hexadecimal format
+ * simple_print_buffer - prints buffer in hexadecimal
  * @buffer: the address of memory to print
  * @size: the size of the memory to print
  *
  * Return: Nothing.
  */
-void simple_print_buffer(int *buffer, unsigned int size)
+void simple_print_buffer(char *buffer, unsigned int size)
 {
-    unsigned int i = 0;
+    unsigned int i;
 
+    i = 0;
     while (i < size)
     {
         if (i % 10)
+        {
             printf(" ");
+        }
         if (!(i % 10) && i)
+        {
             printf("\n");
-
+        }
         printf("0x%02x", buffer[i]);
         i++;
     }
@@ -53,43 +54,29 @@ void simple_print_buffer(int *buffer, unsigned int size)
 }
 
 /**
- * main - Entry point for the program, performs tests
+ * main - check the code
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    int *a;
+    char *a;
 
-    // Test case: _calloc(402, sizeof(char))
-    a = _calloc(402, sizeof(char));
-    if (a != NULL)
-    {
-        simple_print_buffer(a, 402); // Ver impresión del buffer
-        free(a);
-    }
-
-    // Test case: _calloc(0, sizeof(int))
-    a = _calloc(0, sizeof(int));
+    a = _calloc(98, sizeof(char));
     if (a == NULL)
     {
-        printf("Memory allocation failed as expected for _calloc(0, sizeof(int))\n");
+        printf("Memory allocation failed\n");
+        return (1);
     }
 
-    // Test case: _calloc(100, 0)
-    a = _calloc(100, 0);
-    if (a == NULL)
-    {
-        printf("Memory allocation failed as expected for _calloc(100, 0)\n");
-    }
+    strcpy(a, "Best");
+    strcpy(a + 4, " School! :)\n");
+    a[97] = '!';
 
-    // Test case: _calloc(50, sizeof(int))
-    a = _calloc(50, sizeof(int));
-    if (a != NULL)
-    {
-        simple_print_buffer(a, 50); // Ver impresión del buffer
-        free(a);
-    }
+    simple_print_buffer(a, 98);
 
-    return 0;
+    free(a);
+
+    return (0);
 }
+
