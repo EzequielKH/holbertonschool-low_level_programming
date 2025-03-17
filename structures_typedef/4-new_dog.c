@@ -1,26 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include "dog.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "dog.h"
 
 /**
- * _strlen - calculates the length of a string
- * @str: string to calculate the length of
+ * _copy_string - copies a string manually
+ * @src: source string
+ * @dest: destination string
  *
- * Return: the length of the string
+ * Return: void
  */
-int _strlen(char *str)
+void _copy_string(char *src, char *dest)
 {
-	int length = 0;
+	int i = 0;
 
-	while (str[length] != '\0')
-		length++;
-
-	return (length);
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0'; /* Null-terminate the destination string */
 }
 
 /**
@@ -34,7 +32,7 @@ int _strlen(char *str)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
-	int name_len, owner_len;
+	int name_len = 0, owner_len = 0;
 
 	/* Allocate memory for a new dog */
 	new_dog = malloc(sizeof(dog_t));
@@ -42,19 +40,21 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	/* Calculate the length of name and owner manually */
-	name_len = _strlen(name);
-	owner_len = _strlen(owner);
+	while (name[name_len] != '\0')
+		name_len++;
+	while (owner[owner_len] != '\0')
+		owner_len++;
 
-	/* Allocate memory for the dog's name and copy it using strncpy */
+	/* Allocate memory for the dog's name and copy it manually */
 	new_dog->name = malloc(name_len + 1);
 	if (new_dog->name == NULL)
 	{
 		free(new_dog);
 		return (NULL);
 	}
-	strncpy(new_dog->name, name, name_len + 1);
+	_copy_string(name, new_dog->name);
 
-	/* Allocate memory for the owner's name and copy it using strncpy */
+	/* Allocate memory for the owner's name and copy it manually */
 	new_dog->owner = malloc(owner_len + 1);
 	if (new_dog->owner == NULL)
 	{
@@ -62,7 +62,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(new_dog);
 		return (NULL);
 	}
-	strncpy(new_dog->owner, owner, owner_len + 1);
+	_copy_string(owner, new_dog->owner);
 
 	/* Set the dog's age */
 	new_dog->age = age;
