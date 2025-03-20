@@ -27,9 +27,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-
 	result = operation(num1, num2);
 	printf("%d\n", result);
-	
+
 	return (0);
 }

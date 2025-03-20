@@ -11,9 +11,8 @@
  */
 typedef struct op
 {
-    char *op;
-    int (*f)(int a, int b);
-} op_t;
+	char *op;
+	int (*f)(int a, int b);
 
 /* Function prototypes */
 int op_add(int a, int b);
