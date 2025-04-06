@@ -1,6 +1,42 @@
 #include <stdlib.h>
-#include <string.h>
 #include "lists.h"
+
+/**
+ * _strlen - Calculates the length of a string manually.
+ * @s: The string to measure.
+ *
+ * Return: The length of the string.
+ */
+unsigned int _strlen(const char *s)
+{
+	unsigned int len = 0;
+
+	while (s[len])
+		len++;
+	return (len);
+}
+
+/**
+ * _strdup_manual - Duplicates a string without using strdup.
+ * @str: The string to duplicate.
+ *
+ * Return: Pointer to the newly allocated duplicate string.
+ */
+char *_strdup_manual(const char *str)
+{
+	unsigned int len = _strlen(str);
+	char *dup = malloc(sizeof(char) * (len + 1));
+	unsigned int i;
+
+	if (dup == NULL)
+		return (NULL);
+
+	for (i = 0; i < len; i++)
+		dup[i] = str[i];
+	dup[i] = '\0';
+
+	return (dup);
+}
 
 /**
  * add_node - Adds a new node at the beginning of a list_t list.
@@ -12,7 +48,6 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
-	char *dup_str;
 
 	if (str == NULL)
 		return (NULL);
@@ -21,17 +56,17 @@ list_t *add_node(list_t **head, const char *str)
 	if (new_node == NULL)
 		return (NULL);
 
-	dup_str = strdup(str);
-	if (dup_str == NULL)
+	new_node->str = _strdup_manual(str);
+	if (new_node->str == NULL)
 	{
 		free(new_node);
 		return (NULL);
 	}
 
-	new_node->str = dup_str;
-	new_node->len = strlen(dup_str);
+	new_node->len = _strlen(str);
 	new_node->next = *head;
 	*head = new_node;
 
 	return (new_node);
 }
+
