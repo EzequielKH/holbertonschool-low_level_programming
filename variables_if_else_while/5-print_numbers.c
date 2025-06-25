@@ -11,8 +11,7 @@
 int main (void)
 {
 	int a;
-	for (a = 0; a <= 9 ; a = a + 1){
+	for (a = 0; a <= 9 ; a = a + 1)
 		printf("%d\n", a);
-	}
 	return (0);
 }
