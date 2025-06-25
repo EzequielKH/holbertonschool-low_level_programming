@@ -1,11 +1,12 @@
 #include <stdio.h>
 /**
- * main - entry point
+ * main - Entry point
  *
- * Return Always 0 (success)
+ * Description: 'main does exist with functions'
+ *
+ * Return: Always 0 (Success)
  */
-
-int main()
+int main(void)
 {
 	char alfabeto = 'a';
 
@@ -16,4 +17,4 @@ int main()
 	}
 	putchar('\n');
 	return (0);
-}
+

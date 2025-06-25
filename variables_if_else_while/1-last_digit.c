@@ -1,34 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*
- * main - entry point
+
+/**
+ * main - Entry point
  *
+ * Description: 'main does exist with functions'
  *
- * Return - Always 0 (success)
+ * Return: Always 0 (Success)
  */
 
-int main()
+int main(void)
 {
-	int n, y;
+	int n, lastd;
 
 	srand(time(0));
-	n = rand();
+	n = rand() - RAND_MAX / 2;
+	lastd = n % 10;
 
-	y = n % 10;
-	
-	if (y > 5)
+	if (lastd > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, y);
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastd);
 	}
-	else if (y == 0)
+	else if (lastd == 0)
 	{
-		printf("Last digit of %d is %d and is 0\n", n, y);
+		printf("Last digit of %d is %d and is 0\n", n, lastd);
 	}
-	else if (y < 6 && y != 0)
+	else if (lastd < 6 && lastd != 0)
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, y);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastd);
 	}
-
 	return (0);
 }
