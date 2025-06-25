@@ -1,9 +1,21 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Description: 'main does exist with functions'
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
+	char alfabeto = 'z';
 
-
-
-	return(0);
+	while (alfabeto  >= 'a')
+	{
+		putchar(alfabeto);
+		alfabeto--;
+	}
+	putchar('\n');
+	return (0);
 }
