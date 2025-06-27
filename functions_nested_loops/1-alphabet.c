@@ -1,15 +1,15 @@
 #include <stdio.h>
-
+#include "main.h"
 void print_alphabet(void)
 {
 	char alfabeto = 'a';
 
 	while (alfabeto  <= 'z')
 	{
-		putchar(alfabeto);
+		_putchar(alfabeto);
 		alfabeto++;
 	}
-	putchar('\n');
+	_putchar('\n');
 
 	return;
 }
