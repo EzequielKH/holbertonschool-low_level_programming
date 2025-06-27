@@ -1,4 +1,3 @@
-julien@ubuntu:~/$ cat 7-main.c
 #include "main.h"
 
 /**
