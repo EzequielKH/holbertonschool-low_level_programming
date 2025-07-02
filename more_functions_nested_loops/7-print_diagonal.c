@@ -7,3 +7,6 @@
  * Return: always 0 (success)
  */
 
+void print_diagonal(int n)
+{
+}

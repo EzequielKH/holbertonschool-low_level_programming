@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * _isdigit - entry point
  * @c: variable of the function
  * Return: always 0 (success)
  */

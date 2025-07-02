@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
- * main - entry point
- * @c: variable of the function
+ * print_most_numbers - entry point
+ * @a: variable of the function
  * Return: always 0 (success)
  */
 void print_most_numbers(void)

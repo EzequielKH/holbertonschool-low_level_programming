@@ -3,7 +3,13 @@
 
 /**
  * main - entry point
- * @c: variable of the function
+ *
+ * @a: variable of the function
+ * 
  * Return: always 0 (success)
  */
 
+void print_line(int n)
+{
+
+}

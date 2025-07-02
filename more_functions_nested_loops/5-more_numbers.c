@@ -2,8 +2,9 @@
 #include "main.h"
 
 /**
- * main - entry point
- * @c: variable of the function
+ * more_numbers - entry point
+ * @num: variable of the function
+ * @veces: variables of times
  * Return: always 0 (success)
  */
 
