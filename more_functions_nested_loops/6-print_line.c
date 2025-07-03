@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_line - entry point
  *
- * @a: variable of the function
+ * @n: variable of the function
  * 
  * Return: always 0 (success)
  */
@@ -12,4 +12,9 @@
 void print_line(int n)
 {
 
+	while (n-- > 0) 
+	{
+		_putchar('_');
+	}
+		_putchar('\n');	
 }
