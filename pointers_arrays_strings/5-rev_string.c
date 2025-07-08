@@ -1,11 +1,8 @@
 #include "main.h"
+
 /**
  * rev_string - entry point
  * @s: variable char
- * @tmp: variable tmp
- * @i: variable i
- * @len: lenght
- * @len1: lenght1
  */
 void rev_string(char *s)
 {

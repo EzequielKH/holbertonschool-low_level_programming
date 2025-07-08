@@ -2,6 +2,8 @@
 
 /**
  * *_strcpy - entry point
+ * @dest: variable char
+ * @src: variable dest
  * Return: dest
  */
 
