@@ -3,7 +3,9 @@
 /**
  * print_array - prints n elements of an array of integers
  * followed by a new line
- */
+ * @a: variable
+ * @n: variable
+*/
 void print_array(int *a, int n)
 {
 	int i;

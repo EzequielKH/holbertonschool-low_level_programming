@@ -1,5 +1,8 @@
 #include "main.h"
-
+/**
+ * print_rev - entry point
+ * @s: variable char
+ */
 void print_rev(char *s)
 {
         int i;

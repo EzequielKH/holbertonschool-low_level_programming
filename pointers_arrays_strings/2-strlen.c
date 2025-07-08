@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _strlen - entry point
+ * @i: variable i
  * Return: always i (success)
  */
 int _strlen(char *s)
