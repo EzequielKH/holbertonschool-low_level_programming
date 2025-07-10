@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * string_toupper - entry point
+ * @i: variable
+ * Return: always str.
+ */
 char *string_toupper(char *)
 {
 	int i;

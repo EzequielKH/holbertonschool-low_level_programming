@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- *
- *
+ * reverse_array - entry point
+ * @a: pointer a
+ * @n: variable n
+ * @temporal: array of n
  */
 
 void reverse_array(int *a, int n)

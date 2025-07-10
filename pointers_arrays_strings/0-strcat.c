@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -5,6 +6,7 @@
  * @dest: string 1
  * @src: string 2
  */
+
 char *_strcat(char *dest, char *src)
 {
 	int a, b;
