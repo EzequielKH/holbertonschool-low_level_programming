@@ -6,16 +6,15 @@
  * @dest: string 1
  * @src: string 2
  */
-
 char *_strcat(char *dest, char *src)
 {
-	int a, b;
+	int index = 0, dest_len = 0;
 
-	for (a = 0; dest[a] != '\0'; a++);
+	while (dest[index++])
+		dest_len++;
 
-	for (b = 0; src[b] != '\0'; b++)
-	{
-		dest[a + b] = src[b];
-	}
+	for (index = 0; src[index]; index++)
+		dest[dest_len++] = src[index];
+
 	return (dest);
 }
