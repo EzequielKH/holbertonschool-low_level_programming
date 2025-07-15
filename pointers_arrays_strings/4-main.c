@@ -8,10 +8,11 @@
  */
 int main(void)
 {
-	int a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 98, 1024, 1337};
+    char *s = "hello, world";
+    char *f = "world";
+    char *t;
 
-	print_array(a, sizeof(a) / sizeof(int));
-	reverse_array(a, sizeof(a) / sizeof(int));
-	print_array(a, sizeof(a) / sizeof(int));
-	return (0);
+    t = _strpbrk(s, f);
+    printf("%s\n", t);
+    return (0);
 }
