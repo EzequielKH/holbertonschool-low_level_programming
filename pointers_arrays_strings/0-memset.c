@@ -8,7 +8,7 @@
  *
  * Return: Nothing.
  */
-void simple_print_buffer(char *buffer, unsigned int size)
+void *_memset(void *s, int c, size_t n)
 {
 	unsigned int index;
 	unsigned char *memory = s, value = c;
