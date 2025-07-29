@@ -6,6 +6,7 @@
  * @str: string to be added
  * Return: New node added
  */
+
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *add, *current;
