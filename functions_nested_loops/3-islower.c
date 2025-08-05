@@ -1,20 +1,16 @@
-#include <stdio.h>
-#include <ctype.h>
 #include "main.h"
-/**
- * main - entry point
- * Description: wawa main description
- * Return: Always 0 (success)
- */
 
+/**
+ * _islower - checks if a character is lowercase
+ * @c: the character to check
+ *
+ * Return: 1 if lowercase, 0 otherwise
+ */
 int _islower(int c)
 {
-	if (c >= 97 && c <= 122)
-	{
-		return(1);
-	}
-
-	else {
-		return(0);
-	}
+    if (c >= 'a' && c <= 'z')
+        return (1);
+    else
+        return (0);
 }
+
