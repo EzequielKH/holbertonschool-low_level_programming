@@ -3,15 +3,16 @@
 /**
  * main - Entry point
  *
- * Description: 'main does exist with functions'
+ * Description: Prints numbers from 0 to 9, each in a new line.
  *
  * Return: Always 0 (Success)
  */
-
-int main (void)
+int main(void)
 {
 	int a;
-	for (a = 0; a <= 9 ; a = a + 1)
+
+	for (a = 0; a <= 9; a++)
 		printf("%d\n", a);
+
 	return (0);
 }

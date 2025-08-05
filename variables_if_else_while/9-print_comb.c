@@ -1,17 +1,16 @@
 #include <stdio.h>
-#include "_putchar.c"
+#include "main.h"
 
 /**
- * main - Entry point
- *
- * Description: 'main does exist with functions'
- *
- * Return: Always 0 (Success)
+ * main - entry point
+ * Description: Prints numbers 0 to 9 separated by comma and space
+ * Return: 0
  */
 int main(void)
 {
 	int c;
-	for (c = 0; c < 10; c++) 
+
+	for (c = 0; c < 10; c++)
 	{
 		putchar(c + '0');
 		if (c < 9)
@@ -22,5 +21,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-
 }

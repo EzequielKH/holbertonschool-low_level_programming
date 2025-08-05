@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: 'main does exist with functions'
+ * Description: Prints the alphabet in lowercase in reverse order.
  *
  * Return: Always 0 (Success)
  */
@@ -11,7 +11,7 @@ int main(void)
 {
 	char alfabeto = 'z';
 
-	while (alfabeto  >= 'a')
+	while (alfabeto >= 'a')
 	{
 		putchar(alfabeto);
 		alfabeto--;

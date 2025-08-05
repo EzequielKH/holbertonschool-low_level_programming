@@ -3,18 +3,21 @@
 /**
  * main - Entry point
  *
- * Description: 'main does exist with functions'
+ * Description: Prints the lowercase alphabet using a while loop.
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	char alfabeto = 'a';
-	while (alfabeto  <= 'z') {
+
+	while (alfabeto <= 'z')
+	{
 		putchar(alfabeto);
 		alfabeto++;
 	}
+
 	putchar('\n');
-	return(0);
+
+	return (0);
 }
