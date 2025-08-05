@@ -4,29 +4,24 @@
 
 /**
  * main - Entry point
- * Description: 'main does exist with functions
+ * Description: generates a random integer and prints if it's positive, negative or zero
  * Return: Always 0 (Success)
  */
-
-int main()
+int main(void)
 {
-
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	printf("%d ", n);
+
+	printf("%d is ", n);
+
 	if (n > 0)
-	{
-		printf("is positive\n");
-	}
+		printf("positive\n");
 	else if (n < 0)
-	{
-		printf("is negative\n");
-	}
+		printf("negative\n");
 	else
-	{
-		printf("is zero\n");
-	}
+		printf("zero\n");
+
 	return (0);
 }

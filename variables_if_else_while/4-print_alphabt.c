@@ -2,9 +2,7 @@
 
 /**
  * main - Entry point
- *
- * Description: Prints the lowercase alphabet using a while loop.
- *
+ * Description: Prints the lowercase alphabet excluding 'e', 'o', and 'q'.
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -13,7 +11,8 @@ int main(void)
 
 	while (alfabeto <= 'z')
 	{
-		putchar(alfabeto);
+		if (alfabeto != 'e' && alfabeto != 'o' && alfabeto != 'q')
+			putchar(alfabeto);
 		alfabeto++;
 	}
 
