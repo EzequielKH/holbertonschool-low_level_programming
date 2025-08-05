@@ -4,7 +4,8 @@
 
 /**
  * main - Entry point
- * Description: generates a random integer and prints if it's positive, negative or zero
+ * Description: generates a random integer and prints if it's positive,
+ * negative or zero
  * Return: Always 0 (Success)
  */
 int main(void)

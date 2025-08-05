@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "_putchar.c"
 /**
  * main - entry point
  * Description: Prints numbers 0 to 9 separated by comma and space
