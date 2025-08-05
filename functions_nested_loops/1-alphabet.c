@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- * print_alphabet - imprime el abecedario en minúsculas seguido de salto de línea
+ * print_alphabet - imprime el abecedario en minúscula
+ * seguido de salto de líea
  */
 void print_alphabet(void)
 {

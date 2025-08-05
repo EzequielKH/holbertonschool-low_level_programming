@@ -1,15 +1,15 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- * main - entry point
- * Description: wawawawa "wawa"
- * Return: Always 0 (success)
+ * _abs - computes the absolute value of an integer
+ * @n: the integer to get absolute value from
+ *
+ * Return: the absolute value of n
  */
-
-
-int _abs(int n) {
-	if (n >= 0)
-		return(n);
-	else
-		return(-n);
+int _abs(int n)
+{
+    if (n >= 0)
+        return (n);
+    else
+        return (-n);
 }

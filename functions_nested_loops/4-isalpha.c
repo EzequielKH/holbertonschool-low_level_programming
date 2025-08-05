@@ -1,18 +1,15 @@
-#include <stdio.h>
 #include "main.h"
-/**
- * main - entry point
- *
- * Description: wwawa "cositas"
- *
- * Return: Always 0 (success)
- */
 
+/**
+ * _isalpha - checks if a character is an alphabetic letter
+ * @c: the character to check
+ *
+ * Return: 1 if letter (uppercase or lowercase), 0 otherwise
+ */
 int _isalpha(int c)
 {
-	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90)) {
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
-	} else {
+	else
 		return (0);
-	}
 }
