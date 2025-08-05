@@ -1,26 +1,28 @@
 #include "main.h"
+#include <stdlib.h>
 
-/*
+/**
+ * _calloc - asigna memoria para un array de nmemb elementos de size bytes cada uno,
+ *           e inicializa toda la memoria a cero.
+ * @nmemb: número de elementos
+ * @size: tamaño en bytes de cada elemento
  *
- *
- *
+ * Return: puntero a la memoria asignada, o NULL si falla o si nmemb o size es 0
  */
-
-void *_calloc(unsigned int nmeeb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *p;
-	unsigned int a;
-	void *tmp;
+    char *p;
+    unsigned int i;
 
-	if (nmemb <= 0 || size <= 0)
-		return (NULL);
-	p = malloc(nmemb * size);
-	tmp = p;
-	if (p == 0)
-	{
-		return (NULL);
-	}
-	for (a = 0; a < (nmemb * size); a++)
-		p[a] = 0;
-	return (tmp);
+    if (nmemb == 0 || size == 0)
+        return (NULL);
+
+    p = malloc(nmemb * size);
+    if (p == NULL)
+        return (NULL);
+
+    for (i = 0; i < nmemb * size; i++)
+        p[i] = 0;
+
+    return ((void *)p);
 }

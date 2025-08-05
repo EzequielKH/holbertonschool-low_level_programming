@@ -1,34 +1,41 @@
 #include "main.h"
-/*
- *
- *
- *
- */
+#include <stdlib.h>
 
+/**
+ * string_nconcat - concatena dos cadenas s1 y s2, copiando hasta n bytes de s2
+ * @s1: primera cadena
+ * @s2: segunda cadena
+ * @n: número máximo de bytes de s2 a concatenar
+ *
+ * Return: puntero a una nueva cadena resultante, o NULL si falla la asignación
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *p;
-	unsigned int a, b, c, d;
+    char *p;
+    unsigned int len_s1, len_s2, i, j;
 
-	if (s1 == 0)
-		s1 = "";
-	if (s2 == 0)
-		s2 = "";
-	for (a = 0; s1[a] != '\0'; a++)
-		;
-	for (b = 0; s2[b] != '\0'; b++)
-		;
-	if (n > b)
-		p = malloc((a + b + 1) * sizeof(char));
-	else
-		p = malloc((a + n + 1) * sizeof(char));
-	if (p == 0)
-		return (NULL);
+    if (s1 == NULL)
+        s1 = "";
+    if (s2 == NULL)
+        s2 = "";
 
-	for (c = 0; c < a; c++)
-		p[c] = s1[c];
-	for (d = 0; d < n && d < b; d++, c++)
-		p[c] = s2[d];
-	p[c] = '\0';
-	return (p);
+    for (len_s1 = 0; s1[len_s1] != '\0'; len_s1++)
+        ;
+    for (len_s2 = 0; s2[len_s2] != '\0'; len_s2++)
+        ;
+
+    if (n > len_s2)
+        n = len_s2;
+
+    p = malloc(len_s1 + n + 1);
+    if (p == NULL)
+        return (NULL);
+
+    for (i = 0; i < len_s1; i++)
+        p[i] = s1[i];
+    for (j = 0; j < n; j++, i++)
+        p[i] = s2[j];
+    p[i] = '\0';
+
+    return (p);
 }
