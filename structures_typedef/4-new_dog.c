@@ -1,43 +1,50 @@
 #include "dog.h"
+#include <stdlib.h>
 
+/**
+ * new_dog - creates a new dog
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog's owner
+ * Return: pointer to the new dog (dog_t), or NULL if failure
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int a, b, c;
+	int i, len_name, len_owner;
 	dog_t *doggo;
 
-	for (a = 0; name[a] != '\0'; a++)
+	for (len_name = 0; name[len_name] != '\0'; len_name++)
 		;
-	a++;
-	for (b = 0; owner[b] != '\0'; b++)
+
+	for (len_owner = 0; owner[len_owner] != '\0'; len_owner++)
 		;
-	b++;
+
 	doggo = malloc(sizeof(dog_t));
-	if (doggo == 0)
+	if (doggo == NULL)
+		return (NULL);
+
+	doggo->name = malloc((len_name + 1) * sizeof(char));
+	if (doggo->name == NULL)
 	{
 		free(doggo);
 		return (NULL);
 	}
-	doggo->name = malloc(a * sizeof(doggo->name));
-	if (doggo->name == 0)
-	{
-		free(doggo->name);
-		free(doggo);
-		return (NULL);
-	}
-	for (c = 0; c < a; c++)
-		doggo->name[c] = name[c];
-	doggo->name[c] = name[c];
+
+	for (i = 0; i <= len_name; i++)
+		doggo->name[i] = name[i];
+
 	doggo->age = age;
-	doggo->owner = malloc(b * sizeof(doggo->owner));
-	if (doggo->owner == 0)
+
+	doggo->owner = malloc((len_owner + 1) * sizeof(char));
+	if (doggo->owner == NULL)
 	{
-		free(doggo->owner);
 		free(doggo->name);
 		free(doggo);
 		return (NULL);
 	}
-	for (c = 0; c < b; c++)
-		doggo->owner[c] = owner[c];
-	doggo->owner[c] = owner[c];
+
+	for (i = 0; i <= len_owner; i++)
+		doggo->owner[i] = owner[i];
+
 	return (doggo);
 }
